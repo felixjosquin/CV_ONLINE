@@ -1,0 +1,33 @@
+body {
+  --background-color: #ccc;
+  --background-color2: rgb(165, 6, 6);
+  background-color: var(--background-color);
+  align-items: center;
+}
+
+.main_container {
+  max-width: 1350px;
+  margin-right: auto;
+  margin-left: auto;
+  overflow-y: hidden;
+
+  background-color: red;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 2.5fr;
+  grid-template-areas:
+    "header header"
+    "sidebar content";
+
+  .header_container {
+    grid-area: header;
+  }
+
+  .sidebar_container {
+    grid-area: sidebar;
+  }
+
+  .content_container {
+    grid-area: content;
+  }
+}
