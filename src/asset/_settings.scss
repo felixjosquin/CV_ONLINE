@@ -1,19 +1,36 @@
+@font-face {
+  font-family: roblox;
+  src: url(../fonts/Roboto-Regular.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: roblox;
+  src: url(../fonts/Roboto-Medium.ttf);
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: roblox;
+  src: url(../fonts/Roboto-Bold.ttf);
+  font-weight: bold;
+}
+
 body {
   --background-color: #ccc;
-  --background-color2: rgb(165, 6, 6);
   background-color: var(--background-color);
-  align-items: center;
+  font-family: roblox, sans-serif;
+  font-weight: normal;
 }
 
 .main_container {
   max-width: 1350px;
+  padding: 25px;
   margin-right: auto;
   margin-left: auto;
   overflow-y: hidden;
-
-  background-color: red;
   display: grid;
-  gap: 10px;
+  gap: 25px;
   grid-template-columns: 1fr 2.5fr;
   grid-template-areas:
     "header header"
@@ -30,4 +47,10 @@ body {
   .content_container {
     grid-area: content;
   }
+}
+
+.main_container > * {
+  box-shadow: 1px 1px 10px #000;
+  border-radius: 5px;
+  padding: 20px;
 }

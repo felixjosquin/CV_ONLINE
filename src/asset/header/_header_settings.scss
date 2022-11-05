@@ -1,3 +1,10 @@
-.name {
-  background-color: var(--background-color2);
+.header_container {
+  display: flex;
+  color: black;
+  align-items: center;
+
+  background-color: aqua;
+  background-image: url(../../../public/img/verrie.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }

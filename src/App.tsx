@@ -1,5 +1,6 @@
-import Header from "./components/Header";
 import "./asset/index.scss";
+
+import Header from "./components/Header";
 import Content from "./components/Content";
 import Sidebar from "./components/SideBar";
 

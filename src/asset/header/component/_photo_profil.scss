@@ -1,0 +1,12 @@
+.photo_container {
+  flex: 1 0 0;
+  padding: 0 1rem;
+
+  img {
+    width: 200px;
+    margin: auto;
+    display: block;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #000;
+  }
+}
