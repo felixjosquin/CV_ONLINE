@@ -2,8 +2,7 @@
   display: flex;
   color: black;
   align-items: center;
-
-  background-color: aqua;
+  background-color: var(--background-color);
   background-image: url(../../../public/img/verrie.png);
   background-repeat: no-repeat;
   background-size: cover;
