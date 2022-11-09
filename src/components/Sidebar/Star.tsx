@@ -1,11 +1,11 @@
 import React from "react";
 
-interface star {
+interface StarProp {
   value: number;
   color?: string;
 }
 
-const Star = (prop: star) => {
+const Star = (prop: StarProp) => {
   const { value, color } = prop;
   return (
     <svg

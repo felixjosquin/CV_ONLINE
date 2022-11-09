@@ -1,0 +1,24 @@
+.star {
+  height: 20px;
+  margin: 0 2px;
+}
+
+svg.fill-red > path {
+  fill: var(--color-red);
+}
+
+svg.fill-green > path {
+  fill: var(--color-green);
+}
+
+svg.fill-pink > path {
+  fill: var(--color-pink);
+}
+
+svg.fill-blue > path {
+  fill: var(--color-blue);
+}
+
+svg.fill-black > path {
+  fill: black;
+}

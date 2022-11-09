@@ -1,0 +1,44 @@
+.svg-container {
+  svg {
+    height: 100%;
+    width: auto;
+
+    path {
+      transition: 0.8s;
+    }
+  }
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+  position: absolute;
+  top: -15px;
+  left: -10px;
+  transition: 0.5s;
+}
+
+.logo.svg-hover {
+  top: 10px;
+  left: 5px;
+}
+
+.fill-red > svg > path {
+  fill: var(--color-red);
+}
+
+.fill-green > svg > path {
+  fill: var(--color-green);
+}
+
+.fill-pink > svg > path {
+  fill: var(--color-pink);
+}
+
+.fill-blue > svg > path {
+  fill: var(--color-blue);
+}
+
+.fill-black > svg > path {
+  fill: black;
+}

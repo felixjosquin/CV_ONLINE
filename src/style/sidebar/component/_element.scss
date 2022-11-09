@@ -3,7 +3,7 @@
   overflow: hidden;
   position: relative;
   background-color: white;
-  height: 60px;
+  height: 40px;
   border-radius: 5px;
   transition: 0.8s;
 
@@ -12,7 +12,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    margin: 10px 10px 0 85px;
+    margin: 10px 10px 0 70px;
     transition: 0.8s;
 
     h3 {
@@ -33,14 +33,11 @@
 }
 
 .elt-container:hover {
-  height: 100px;
+  height: 70px;
   margin: 20px 0;
 
-  .info-container {
-    margin-top: 40px;
-    span {
-      margin-top: 5px;
-    }
+  .info-container > span {
+    margin-top: 5px;
   }
 }
 

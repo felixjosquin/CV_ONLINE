@@ -1,4 +1,4 @@
-import "./asset/index.scss";
+import "./style/index.scss";
 
 import Header from "./components/Header";
 import Content from "./components/Content";

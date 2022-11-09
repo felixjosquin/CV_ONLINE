@@ -22,30 +22,10 @@ body {
   --color-green: #226f54;
   --color-red: #885053;
   --color-blue: #1a8a9e;
-  overflow-y: hidden;
+  // overflow-y: hidden;
   background-color: var(--background-color);
   font-family: roblox, sans-serif;
   font-weight: normal;
-
-  .fill-red > path {
-    fill: var(--color-red);
-  }
-
-  .fill-green > path {
-    fill: var(--color-green);
-  }
-
-  .fill-pink > path {
-    fill: var(--color-pink);
-  }
-
-  .fill-blue > path {
-    fill: var(--color-blue);
-  }
-
-  .fill-black > path {
-    fill: black;
-  }
 }
 
 .main_container {
