@@ -1,5 +1,5 @@
 .elt-container {
-  margin: 10px 0;
+  margin: 10px 10px;
   overflow: hidden;
   position: relative;
   background-color: white;
@@ -34,50 +34,40 @@
 
 .elt-container:hover {
   height: 70px;
-  margin: 20px 0;
+  margin: 10px 10px;
 
   .info-container > span {
     margin-top: 5px;
   }
 }
 
-.elt-container-red {
-  border: 2px solid black;
-  // box-shadow: 1px 1px 5px black;
-  color: var(--color-red);
-}
+// .elt-container-green {
+//   border: 1px solid var(--color-green);
+//   // box-shadow: 1px 1px 5px black;
+//   color: var(--color-green);
+// }
 
-.elt-container-red:hover {
-  box-shadow: 1px 1px 15px var(--color-red);
-}
+// .elt-container-green:hover {
+//   border: 2px solid transparent;
+//   box-shadow: 1px 1px 15px var(--color-green);
+// }
 
-.elt-container-green {
-  border: 1px solid var(--color-green);
-  // box-shadow: 1px 1px 5px black;
-  color: var(--color-green);
-}
+// .elt-container-pink {
+//   border: 2px solid black;
+//   // box-shadow: 1px 1px 5px black;
+//   color: var(--color-pink);
+// }
 
-.elt-container-green:hover {
-  border: 2px solid transparent;
-  box-shadow: 1px 1px 15px var(--color-green);
-}
+// .elt-container-pink:hover {
+//   box-shadow: 1px 1px 15px var(--color-pink);
+// }
 
-.elt-container-pink {
-  border: 2px solid black;
-  // box-shadow: 1px 1px 5px black;
-  color: var(--color-pink);
-}
+// .elt-container-blue {
+//   border: 2px solid black;
+//   // box-shadow: 1px 1px 5px black;
+//   color: var(--color-blue);
+// }
 
-.elt-container-pink:hover {
-  box-shadow: 1px 1px 15px var(--color-pink);
-}
-
-.elt-container-blue {
-  border: 2px solid black;
-  // box-shadow: 1px 1px 5px black;
-  color: var(--color-blue);
-}
-
-.elt-container-blue:hover {
-  box-shadow: 1px 1px 15px var(--color-blue);
-}
+// .elt-container-blue:hover {
+//   box-shadow: 1px 1px 15px var(--color-blue);
+// }

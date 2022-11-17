@@ -1,6 +1,9 @@
 .star {
   height: 20px;
   margin: 0 2px;
+  * {
+    transition: 0.8s;
+  }
 }
 
 svg.fill-red > path {
@@ -21,4 +24,9 @@ svg.fill-blue > path {
 
 svg.fill-black > path {
   fill: black;
+}
+
+.elt-container:hover .star > path {
+  fill: #fd3;
+  filter: drop-shadow(0 0 10px #fd3);
 }

@@ -1,34 +1,35 @@
 import React from "react";
+import { color_type } from "../../utils/type";
 import SvgComponent from "./SvgComponent";
 
 interface IconProp {
   identifier: string;
-  hover: boolean;
-  color?: { hover?: string; not_hover?: string };
+  color?: { hover?: color_type; not_hover?: color_type };
   className?: string;
 }
 
 const SvgContainer = (prop: IconProp) => {
-  const { identifier, hover, color } = prop;
+  const { identifier, color } = prop;
 
-  const fill_color = (
-    hover: boolean,
-    color?: { hover?: string; not_hover?: string }
-  ) => {
-    if (hover) {
-      if (color?.hover) {
-        return ` svg-hover fill-${color.hover}`;
-      }
-      return ` svg-hover`;
+  const fill_color = function (color: {
+    hover?: color_type;
+    not_hover?: color_type;
+  }): string {
+    let res = " ";
+    if (color.hover) {
+      res += `fill-${color.hover}-hover`;
     }
-    if (!hover && color?.not_hover) {
-      return ` fill-${color.not_hover}`;
+    if (color.not_hover) {
+      res += `fill-${color.not_hover}-not-hover`;
     }
-    return "";
+    return res;
   };
+
   return (
     <div
-      className={"svg-container " + prop.className + fill_color(hover, color)}
+      className={
+        "svg-container " + prop.className + (color && fill_color(color))
+      }
     >
       <SvgComponent identifier={identifier} />
     </div>

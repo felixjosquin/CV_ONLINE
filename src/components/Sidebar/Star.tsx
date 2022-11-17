@@ -1,15 +1,29 @@
 import React from "react";
+import { color_type } from "../../utils/type";
 
 interface StarProp {
   value: number;
-  color?: string;
+  color?: { hover?: color_type; not_hover?: color_type };
 }
 
 const Star = (prop: StarProp) => {
   const { value, color } = prop;
+
+  const fill_color = function (color: {
+    hover?: string;
+    not_hover?: string;
+  }): string {
+    let res = " ";
+    if (color.hover) {
+      res += `fill-${color.hover}`;
+    } else if (color.not_hover) {
+      res += `fill-${color.not_hover}`;
+    }
+    return res;
+  };
   return (
     <svg
-      className={"star" + (color ? " fill-" + color : "")}
+      className={"star" + (color && fill_color(color))}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 375.59 358"
     >

@@ -9,6 +9,54 @@
   }
 }
 
+div:hover > .fill-red-hover path {
+  fill: var(--color-red);
+}
+
+div:hover > .fill-green-hover path {
+  fill: var(--color-green);
+}
+
+div:hover > .fill-pink-hover path {
+  fill: var(--color-pink);
+}
+
+div:hover > .fill-blue-hover path {
+  fill: var(--color-blue);
+}
+
+div:not(:hover) > .fill-red-not-hover path {
+  fill: var(--color-red);
+}
+
+div:not(:hover) > .fill-green-not-hover path {
+  fill: var(--color-green);
+}
+
+div:not(:hover) > .fill-pink-not-hover path {
+  fill: var(--color-pink);
+}
+
+div:not(:hover) > .fill-blue-not-hover path {
+  fill: var(--color-blue);
+}
+
+.fill-red path {
+  fill: var(--color-red);
+}
+
+.fill-green path {
+  fill: var(--color-green);
+}
+
+.fill-pink path {
+  fill: var(--color-pink);
+}
+
+.fill-blue path {
+  fill: var(--color-blue);
+}
+
 .logo {
   height: 50px;
   width: auto;
@@ -18,27 +66,9 @@
   transition: 0.5s;
 }
 
-.logo.svg-hover {
-  top: 10px;
-  left: 5px;
-}
-
-.fill-red > svg > path {
-  fill: var(--color-red);
-}
-
-.fill-green > svg > path {
-  fill: var(--color-green);
-}
-
-.fill-pink > svg > path {
-  fill: var(--color-pink);
-}
-
-.fill-blue > svg > path {
-  fill: var(--color-blue);
-}
-
-.fill-black > svg > path {
-  fill: black;
+.elt-container:hover {
+  .logo {
+    top: 10px;
+    left: 10px;
+  }
 }
