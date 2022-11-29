@@ -9,34 +9,42 @@
   }
 }
 
+button:hover > .fill-red-hover path,
 div:hover > .fill-red-hover path {
   fill: var(--color-red);
 }
 
+button:hover > .fill-green-hover path,
 div:hover > .fill-green-hover path {
   fill: var(--color-green);
 }
 
+button:hover > .fill-pink-hover path,
 div:hover > .fill-pink-hover path {
   fill: var(--color-pink);
 }
 
+button:hover > .fill-blue-hover path,
 div:hover > .fill-blue-hover path {
   fill: var(--color-blue);
 }
 
+button:not(:hover) > .fill-red-not-hover path,
 div:not(:hover) > .fill-red-not-hover path {
   fill: var(--color-red);
 }
 
+button:not(:hover) > .fill-green-not-hover path,
 div:not(:hover) > .fill-green-not-hover path {
   fill: var(--color-green);
 }
 
+button:not(:hover) > .fill-pink-not-hover path,
 div:not(:hover) > .fill-pink-not-hover path {
   fill: var(--color-pink);
 }
 
+button:not(:hover) > .fill-blue-not-hover path,
 div:not(:hover) > .fill-blue-not-hover path {
   fill: var(--color-blue);
 }

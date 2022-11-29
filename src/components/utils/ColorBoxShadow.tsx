@@ -5,6 +5,7 @@ import React from "react";
 const ColorBoxShadow = function (prop: {
   children: React.ReactElement;
   colors: string[];
+  className: string;
 }) {
   const color_shadow = function (colors: string[]): string {
     const nb_color = colors.length;
@@ -20,7 +21,7 @@ const ColorBoxShadow = function (prop: {
 
   return (
     <div
-      className="color_border"
+      className={"color_border " + prop.className}
       style={{ backgroundImage: color_shadow(prop.colors) }}
     >
       {prop.children}

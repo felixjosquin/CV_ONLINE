@@ -11,10 +11,11 @@ interface IconProp {
 const SvgContainer = (prop: IconProp) => {
   const { identifier, color } = prop;
 
-  const fill_color = function (color: {
+  const fill_color = function (color?: {
     hover?: color_type;
     not_hover?: color_type;
   }): string {
+    if (!color) return "";
     let res = " ";
     if (color.hover) {
       res += `fill-${color.hover}-hover`;
@@ -26,11 +27,7 @@ const SvgContainer = (prop: IconProp) => {
   };
 
   return (
-    <div
-      className={
-        "svg-container " + prop.className + (color && fill_color(color))
-      }
-    >
+    <div className={"svg-container " + prop.className + fill_color(color)}>
       <SvgComponent identifier={identifier} />
     </div>
   );

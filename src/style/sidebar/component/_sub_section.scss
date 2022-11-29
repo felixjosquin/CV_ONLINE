@@ -1,14 +1,102 @@
-.subsection-container {
+.subsection-head {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+  cursor: pointer;
+  background-color: transparent;
+  width: calc(100% - 20px);
+  border: none;
+
   .subsection-icon {
-    height: 80px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+    height: 60px;
   }
 
   .subsection-title {
-    text-align: center;
+    transition: 0.5s;
     width: min-content;
-    margin: 8px auto 0 auto;
+    font-size: 1.2em;
+    text-align: left;
+  }
+
+  .more-svg {
+    height: 10px;
+    margin-left: 15px;
+    transition: 0.5s;
+    path {
+      transition: 0.5s;
+    }
+  }
+
+  .more-svg:not(.more-svg-pressed) {
+    transform: rotate(180deg);
+  }
+}
+
+.subsection-head:hover .subsection-title {
+  letter-spacing: 1.5px;
+}
+
+.subsection-head-red:hover {
+  .subsection-title {
+    color: var(--color-red);
+  }
+  .more-svg path {
+    fill: var(--color-red);
+  }
+}
+
+.subsection-head-pink:hover {
+  .subsection-title {
+    color: var(--color-pink);
+  }
+  .more-svg path {
+    fill: var(--color-pink);
+  }
+}
+
+.subsection-head-green:hover {
+  .subsection-title {
+    color: var(--color-green);
+  }
+  .more-svg path {
+    fill: var(--color-green);
+  }
+}
+
+.subsection-head-blue:hover {
+  .subsection-title {
+    color: var(--color-blue);
+  }
+  .more-svg path {
+    fill: var(--color-blue);
+  }
+}
+
+.subsection-list {
+  overflow: hidden;
+  position: relative;
+  .cache {
+    cursor: pointer;
+    animation: fade_cache 0.5s forwards reverse;
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    background: linear-gradient(to top, white 20%, transparent);
+    top: calc(100% - 50px);
+  }
+  .cache-show-more {
+    animation: fade_cache 1s 0.8s forwards;
+    pointer-events: none;
+  }
+}
+
+@keyframes fade_cache {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }

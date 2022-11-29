@@ -1,0 +1,17 @@
+.nav_item_container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  .logo_container {
+    width: 50px;
+    svg {
+      width: 100%;
+    }
+  }
+
+  span {
+    width: min-content;
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
